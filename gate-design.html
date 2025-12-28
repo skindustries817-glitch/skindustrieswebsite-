@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gate Designs & Manufacturing | SK Industries</title>
   <link rel="stylesheet" href="styles.css">
+
   <style>
     .gate-details {
       background: #f8fafc;
@@ -15,23 +16,27 @@
       box-shadow: 0 2px 10px #23407818;
       border: 1px solid #d3e2f7;
     }
+
     .gate-details h2 {
       color: #234078;
       margin-bottom: 0.5rem;
       font-size: 1.13rem;
       font-weight: bold;
     }
+
     .gate-details ul {
       font-size: 1.07rem;
       color: #333;
       margin: 1rem 0 0 1rem;
     }
+
     .divider {
       width: 90%;
       max-width: 440px;
       margin: 2rem auto;
       border-top: 2px dashed #fece39;
     }
+
     .intro-professional {
       max-width: 540px;
       margin: 3rem auto 2rem auto;
@@ -44,8 +49,14 @@
       border: 1px solid #d4e0f3;
       text-align: center;
     }
+
+    /* ✅ CENTER BUTTON PROPERLY */
+    .catalogue-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
     .catalogue-btn {
-      display: inline-block;
       background: var(--accent-yellow, #fece39);
       color: var(--primary-blue, #234078);
       font-weight: 700;
@@ -53,16 +64,17 @@
       padding: 0.75rem 2.1rem;
       border-radius: 30px;
       text-decoration: none;
-      margin: 2rem auto 2.5rem auto;
+      margin: 2rem 0 2.5rem 0;
       box-shadow: 0 2px 12px #fece3930;
       border: 2px solid var(--accent-yellow, #fece39);
       transition: background 0.18s, color 0.18s;
-      text-align: center;
     }
+
     .catalogue-btn:hover {
       background: #234078;
       color: #fece39;
     }
+
     .back-link {
       display: block;
       width: fit-content;
@@ -77,12 +89,14 @@
       border: 2px solid #fece39;
       transition: background 0.13s;
     }
+
     .back-link:hover {
       background: #fff;
       color: #234078;
     }
   </style>
 </head>
+
 <body>
   <header class="main-header">
     <div class="container nav-flex">
@@ -105,22 +119,26 @@
     </section>
 
     <div class="intro-professional">
-      At SK Industries, we specialize in creating custom gates and gate designs of any size using both mild steel and stainless steel. Our fabrication experts work closely with you to develop the perfect gate solutions—whether you need robust security, elegant decorative gates, or unique patterns to enhance your property’s look. We offer a variety of materials and additional decorative features, ensuring your gate is tailored to your needs, aesthetics, and application.
+      At SK Industries, we specialize in creating custom gates and gate designs of any size using both mild steel and stainless steel. Our fabrication experts work closely with you to develop the perfect gate solutions—whether you need robust security, elegant decorative gates, or unique patterns to enhance your property’s look.
     </div>
 
     <section class="gate-details">
       <h2>Our Gate Manufacturing Features:</h2>
       <ul>
-        <li><strong>Custom Designs:</strong> Modern, classic, or fully bespoke patterns for any property type</li>
-        <li><strong>Materials:</strong> Durable mild steel, premium stainless steel options</li>
-        <li><strong>Finishes:</strong> Advanced powder coating, enamel, and weather-resistant treatments available</li>
-        <li><strong>Automation:</strong> Manual, semi-automatic, and fully automatic gate solutions</li>
-        <li><strong>Applications:</strong> Residential, industrial, commercial, and agricultural entrances</li>
-        <li><strong>Consultation:</strong> Expert design assistance, site measurement, and installation advice included</li>
+        <li><strong>Custom Designs:</strong> Modern, classic, or fully bespoke patterns</li>
+        <li><strong>Materials:</strong> Mild steel and stainless steel</li>
+        <li><strong>Finishes:</strong> Powder coating & weather-resistant treatments</li>
+        <li><strong>Automation:</strong> Manual & automatic gate options</li>
+        <li><strong>Applications:</strong> Residential, industrial & commercial</li>
+        <li><strong>Consultation:</strong> Design, measurement & installation guidance</li>
       </ul>
     </section>
 
-    <a href="gate-catalogue.html" class="catalogue-btn">Design Catalogue</a>
+    <!-- ✅ CENTERED BUTTON -->
+    <div class="catalogue-wrapper">
+      <a href="gate-catalogue.html" class="catalogue-btn">Design Catalogue</a>
+    </div>
+
     <a href="index.html#services" class="back-link">← Back to Services</a>
   </main>
 
