@@ -5,7 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SK Industries - Metal Fabrication & Gate Manufacturing</title>
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* Make service cards clearly clickable */
+    .service-cards .card {
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
+      border: 2px solid transparent;
+      position: relative;
+    }
+
+    .service-cards .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+      border: 2px solid #fece39;
+    }
+
+    .click-more {
+      margin-top: 12px;
+      font-weight: 700;
+      color: #234078;
+      font-size: 0.95rem;
+    }
+
+    .service-cards .card:hover .click-more {
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
   <header class="main-header">
     <div class="container nav-flex">
@@ -37,22 +65,42 @@
     <section id="services" class="services">
       <div class="container">
         <h2>Our Services</h2>
+
         <div class="service-cards">
           <a href="laser-cutting.html" class="card" style="text-decoration:none; color:inherit;">
             <h3>Laser Cutting</h3>
-            <p>Precision laser cutting for all your metal design needs—including custom gates and panels. Mild Steel up to 25mm, Stainless Steel up to 12mm, 0.25mm precision.</p>
+            <p>
+              Precision laser cutting for all your metal design needs—including custom gates and panels.
+              Mild Steel up to 25mm, Stainless Steel up to 12mm, 0.25mm precision.
+            </p>
+            <div class="click-more">Click for more details →</div>
           </a>
+
           <a href="sheet-bending.html" class="card" style="text-decoration:none; color:inherit;">
             <h3>Sheet Bending & Rolling</h3>
-            <p>Accurate sheet bending (MS up to 6mm, SS up to 4mm) and rolling (MS up to 6mm, SS up to 4mm, max length 3100mm).</p>
+            <p>
+              Accurate sheet bending (MS up to 6mm, SS up to 4mm) and rolling
+              (MS up to 6mm, SS up to 4mm, max length 3100mm).
+            </p>
+            <div class="click-more">Click for more details →</div>
           </a>
+
           <a href="gate-design.html" class="card" style="text-decoration:none; color:inherit;">
             <h3>Gate Design & Manufacturing</h3>
-            <p>Custom gate designs in mild/stainless steel, all sizes and styles. Decorative patterns, automation, expert installation. See our catalogue!</p>
+            <p>
+              Custom gate designs in mild/stainless steel, all sizes and styles.
+              Decorative patterns, automation, expert installation.
+            </p>
+            <div class="click-more">Click to view designs →</div>
           </a>
+
           <a href="custom-fabrication.html" class="card" style="text-decoration:none; color:inherit;">
             <h3>Custom Fabrication</h3>
-            <p>We fabricate custom metal designs for any purpose—industrial, commercial, residential, or creative. View our gallery for examples!</p>
+            <p>
+              We fabricate custom metal designs for industrial, commercial,
+              residential, or creative applications.
+            </p>
+            <div class="click-more">Click to see examples →</div>
           </a>
         </div>
       </div>
@@ -62,7 +110,8 @@
       <div class="container">
         <h2>About SK Industries</h2>
         <p>
-          SK Industries is your trusted partner in metal fabrication, specializing in laser cutting, sheet bending, rolling, custom fabrication, and gate manufacturing. We deliver precise results and custom solutions for both industrial and residential clients. Our commitment: quality, speed, and innovation.
+          SK Industries is your trusted partner in metal fabrication, specializing in laser cutting,
+          sheet bending, rolling, custom fabrication, and gate manufacturing.
         </p>
       </div>
     </section>
@@ -76,7 +125,7 @@
         <p>Phone/WhatsApp: <a href="https://wa.me/9845596817">9845596817</a></p>
 
         <p>Email:
-          <a href="mailto:skindustries817@gmail.com" id="email-link">skindustries817@gmail.com</a>
+          <a href="mailto:skindustries817@gmail.com">skindustries817@gmail.com</a>
           <button id="copyEmailBtn" style="margin-left:10px; padding:3px 8px; cursor:pointer;">
             Copy
           </button>
@@ -84,11 +133,9 @@
 
         <p>Location: <span>4XXV+G23, Mudabidri, Karnataka 574213</span></p>
 
-        <!-- Follow Us on Instagram -->
         <p style="margin-top:15px;">
           <strong>Follow us on:</strong>
-          <a href="https://www.instagram.com/sk_industry_chilimbi"
-             target="_blank"
+          <a href="https://www.instagram.com/sk_industry_chilimbi" target="_blank"
              style="margin-left:8px; text-decoration:none; font-weight:600;">
             Instagram @sk_industry_chilimbi
           </a>
@@ -101,7 +148,6 @@
     </div>
   </footer>
 
-  <!-- Copy Email JavaScript -->
   <script>
     document.getElementById("copyEmailBtn").addEventListener("click", function () {
       const email = "skindustries817@gmail.com";
@@ -110,6 +156,5 @@
       });
     });
   </script>
-
 </body>
 </html>
